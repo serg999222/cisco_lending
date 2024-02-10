@@ -32,6 +32,7 @@ aside {
 
 html,
 body {
+	scroll-behavior: smooth;
 	height: 100%;
 	width: 100%;
 	line-height: 1;
@@ -115,6 +116,7 @@ main {
 body {
 	font-family: 'Montserrat';
 	position: relative;
+
 }
 
 :root {

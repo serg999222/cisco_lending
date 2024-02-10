@@ -58,5 +58,13 @@ document.querySelector('.close_button').addEventListener('click', () => {
 	});
 });
 
-
+document.querySelectorAll('.menu_item1').forEach(item => {
+	item.addEventListener('click', () => {
+		menuBlock.classList.remove('active');
+		// Видаляємо клас active у всіх дочірніх елементів
+		menuBlock.querySelectorAll('.menu_item1').forEach(element => {
+			element.classList.remove('active');
+		});
+	})
+})
 // ////////////////////////////////////////////////////////////////////////////////
